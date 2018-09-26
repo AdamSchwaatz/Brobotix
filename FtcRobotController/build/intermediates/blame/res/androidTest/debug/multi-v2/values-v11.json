@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Adam\\Desktop\\ftc_app-master\\ftc_app-master\\FtcRobotController\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "C:\\Users\\Adam\\Desktop\\Brobotix\\Brobotix\\FtcRobotController\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Adam\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\885baeeb87eaaa080cb8cfda62d1dc09\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Adam\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\f2f7dcc923a3dee98aa1c8a133da3a04\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -30,18 +30,21 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
 TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.Examples.Teleop;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.util.ElapsedTime;
+
+import org.firstinspires.ftc.teamcode.Examples.HardwareBasebot;
+
 //@Disabled
 @TeleOp(name="Third Times the Charm", group="Adam")
 public class OpMode_TankDrive extends LinearOpMode {
 
     private ElapsedTime    runtime  = new ElapsedTime();
-    HardwareBasebot        robot    = new HardwareBasebot();   // Use a Pushbot's hardware
+    HardwareBasebot robot    = new HardwareBasebot();   // Use a Pushbot's hardware
 
     public final double SPEED = -0.4;
     public final double SPEED_1 = -0.25;
