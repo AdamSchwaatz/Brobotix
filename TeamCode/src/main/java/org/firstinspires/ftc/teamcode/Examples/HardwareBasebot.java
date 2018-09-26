@@ -39,7 +39,7 @@ public class HardwareBasebot
     /* Public OpMode members. */
     public DcMotor  leftMotor   = null;
     public DcMotor  rightMotor  = null;
-    public DcMotor  arm   = null;
+    //public DcMotor  arm   = null;
     public Servo    claw = null;
     public Servo    claw2 = null;
     public Servo    relic = null;
@@ -64,18 +64,18 @@ public class HardwareBasebot
         //menu in the phones
         leftMotor   = hwMap.dcMotor.get("left_drive");
         rightMotor  = hwMap.dcMotor.get("right_drive");
-        arm = hwMap.dcMotor.get("arm");
+        //arm = hwMap.dcMotor.get("arm");
         //Set the direction of the Motors
         //If one of your motors is ever spinning the wrong direction change it here
         leftMotor.setDirection(DcMotor.Direction.FORWARD);
         rightMotor.setDirection(DcMotor.Direction.REVERSE);
-        arm.setDirection(DcMotor.Direction.REVERSE);
+        //arm.setDirection(DcMotor.Direction.REVERSE);
         //Define and Initialize Servos
         //On the left is the name that you give the servo that you will use everywhere else in code
         //In the quotations is the name of the servo in the phone in the configure robot tab
-        claw = hwMap.servo.get("claw");
-        claw2 = hwMap.servo.get("claw2");
-        relic = hwMap.servo.get("relic");
+//        claw = hwMap.servo.get("claw");
+//        claw2 = hwMap.servo.get("claw2");
+//        relic = hwMap.servo.get("relic");
         //Note if you put a name in quotations in the code here and it does not appear in the
         //phone then the robot will fail to initialize because it will look for either a motor
         //or a servo with that name
@@ -89,14 +89,14 @@ public class HardwareBasebot
         // Set all motors to zero power to make sure it doesn't move at the start
         leftMotor.setPower(0);
         rightMotor.setPower(0);
-        arm.setPower(0);
+        //arm.setPower(0);
 
 
         // Set all motors to run without encoders.
         // May want to use RUN_USING_ENCODERS if encoders are installed.
         leftMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         rightMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        arm.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        //arm.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
     }
 
     /***
