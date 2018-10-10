@@ -28,11 +28,13 @@ public class MecanumBasebot
     public DcMotor leftRearMotor   = null;
     public DcMotor rightRearMotor  = null;
     public DcMotor lift = null;
-    public DcMotor rightArm = null;
+    public DcMotor handMotor = null;
+    public DcMotor push = null;
 //    public Servo    leftServo = null;
 //    public Servo    rightServo = null;
     public Servo rightHand = null;
     public Servo leftHand = null;
+    public Servo dumpHand = null;
 
     /* local OpMode members. */
     HardwareMap hwMap           =  null;
@@ -53,25 +55,29 @@ public class MecanumBasebot
         leftRearMotor   = hwMap.dcMotor.get("left_rear");
         rightRearMotor  = hwMap.dcMotor.get("right_rear");
         lift = hwMap.dcMotor.get("back_lift");
-        rightArm = hwMap.dcMotor.get("right_arm");
+        handMotor = hwMap.dcMotor.get("hand_motor");
+        push = hwMap.dcMotor.get("back_push");
 
         leftFrontMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rightFrontMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         leftRearMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rightRearMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         lift.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        rightArm.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        handMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        push.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         leftFrontMotor.setDirection(DcMotorSimple.Direction.FORWARD);
         rightFrontMotor.setDirection(DcMotorSimple.Direction.REVERSE);
         leftRearMotor.setDirection(DcMotorSimple.Direction.FORWARD);
         rightRearMotor.setDirection(DcMotorSimple.Direction.REVERSE);
         lift.setDirection(DcMotorSimple.Direction.FORWARD);
-        rightArm.setDirection(DcMotorSimple.Direction.FORWARD);
+        handMotor.setDirection(DcMotorSimple.Direction.FORWARD);
+        push.setDirection(DcMotorSimple.Direction.FORWARD);
 
 //        leftServo = hwMap.servo.get("left");
 //        rightServo = hwMap.servo.get("right");
         leftHand = hwMap.servo.get("left_hand");
         rightHand = hwMap.servo.get("right_hand");
+        dumpHand = hwMap.servo.get("dump_hand");
 
 
         // Set all motors to zero power
@@ -80,7 +86,8 @@ public class MecanumBasebot
         leftRearMotor.setPower(0);
         rightRearMotor.setPower(0);
         lift.setPower(0);
-        rightArm.setPower(0);
+        handMotor.setPower(0);
+        push.setPower(0);
         // Set all motors to run without encoders.
         // May want to use RUN_USING_ENCODERS if encoders are installed.
         leftFrontMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
@@ -88,7 +95,8 @@ public class MecanumBasebot
         leftRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         rightRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         lift.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        rightArm.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        handMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        push.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
     }
 
     /***

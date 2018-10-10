@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Adam\\Desktop\\Brobotix\\Brobotix\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+            "outputFile": "C:\\Users\\Adam\\Desktop\\Brobotix\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Adam\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\f2f7dcc923a3dee98aa1c8a133da3a04\\res\\values-v14\\values-v14.xml",
+                    "source": "C:\\Users\\Adam\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\00be0f484519bcdddebbf76969240733\\res\\values-v14\\values-v14.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

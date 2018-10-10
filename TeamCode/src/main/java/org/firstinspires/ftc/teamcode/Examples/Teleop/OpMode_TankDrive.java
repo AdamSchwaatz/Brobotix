@@ -41,6 +41,7 @@ import org.firstinspires.ftc.teamcode.Examples.HardwareBasebot;
 
 //@Disabled
 @TeleOp(name="Third Times the Charm", group="Adam")
+@Disabled
 public class OpMode_TankDrive extends LinearOpMode {
 
     private ElapsedTime    runtime  = new ElapsedTime();
@@ -158,8 +159,8 @@ public class OpMode_TankDrive extends LinearOpMode {
                 robot.relic.setPosition(.35);
 
             //Arm Controls
-            robot.arm.setPower(gamepad1.right_trigger);
-            robot.arm.setPower(-gamepad1.left_trigger);
+//            robot.arm.setPower(gamepad1.right_trigger);
+//            robot.arm.setPower(-gamepad1.left_trigger);
 
         }
     }

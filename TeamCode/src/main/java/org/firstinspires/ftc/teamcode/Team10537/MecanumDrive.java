@@ -10,13 +10,15 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  */
 
 @TeleOp(name="Mecanum Drive", group="Adam")
-@Disabled
+
 public class MecanumDrive extends LinearOpMode {
 
     private ElapsedTime runtime  = new ElapsedTime();
     MecanumBasebot robot    = new MecanumBasebot();   // Use a Pushbot's hardware
 
     public final double SPEED = -0.4;
+    public double dumpTime = 0;
+    public int dumpPosition = 0;
     @Override
     public void runOpMode() {
         robot.init(hardwareMap);
@@ -49,6 +51,14 @@ public class MecanumDrive extends LinearOpMode {
             robot.leftRearMotor.setPower(v3);
             robot.rightRearMotor.setPower(v4);
 
+            robot.lift.setPower(gamepad2.left_stick_y);
+            robot.handMotor.setPower(gamepad2.right_stick_y);
+
+            while(gamepad1.dpad_up){
+                robot.push.setPower(0.5);
+            }
+
+
             //Arm Controls
 //            if(gamepad1.dpad_up){
 //                robot.leftArm.setPower(0.4);
@@ -68,6 +78,20 @@ public class MecanumDrive extends LinearOpMode {
                 robot.rightHand.setPosition(0);
                 robot.leftHand.setPosition(0);
             }
+
+            if(gamepad1.b){
+                if((runtime.seconds()-dumpTime)>1){
+                    if(dumpPosition == 0){
+                        robot.dumpHand.setPosition(1);
+                        dumpPosition = 1;
+                    }else if(dumpPosition == 1){
+                        robot.dumpHand.setPosition(0);
+                        dumpPosition = 0;
+                    }
+                }
+                dumpTime = runtime.seconds();
+            }
+
 //            if(gamepad1.left_trigger>0){
 //                robot.leftArm.setPower(gamepad1.left_trigger*.5);
 //            }else{

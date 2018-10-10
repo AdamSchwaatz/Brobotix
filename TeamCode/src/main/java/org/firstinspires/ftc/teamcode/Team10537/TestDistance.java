@@ -27,7 +27,7 @@ import java.util.Locale;
  */
 //@Disabled
 @Autonomous(name="TestDistance", group ="Concept")
-@Disabled
+
 public class TestDistance extends LinearOpMode {
 
     public enum GoldLocation {
