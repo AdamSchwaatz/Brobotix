@@ -6,7 +6,6 @@ import com.disnodeteam.dogecv.detectors.roverrukus.GoldAlignDetector;
 import com.qualcomm.hardware.bosch.BNO055IMU;
 import com.qualcomm.hardware.bosch.JustLoggingAccelerationIntegrator;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
@@ -26,9 +25,9 @@ import java.util.Locale;
  * Created by Adam on 11/27/2017.
  */
 //@Disabled
-@Autonomous(name="TestDistance", group ="Concept")
+@Autonomous(name="CraterSide", group ="Concept")
 
-public class TestDistance extends LinearOpMode {
+public class CraterSide extends LinearOpMode {
 
     public enum GoldLocation {
         UNKNOWN,
@@ -65,6 +64,7 @@ public class TestDistance extends LinearOpMode {
     static final double COUNTS_PER_INCH_HAND =(ticksCoreHex * HAND_GEAR_REDUCTION) / (SHAFT_DIAMETER_INCHES * PI);
     int stage = 1;
     int depotSelection;
+    int craterSelection;
 
     //Setup for the internal imu in the expansion hub
     BNO055IMU imu;
@@ -121,35 +121,29 @@ public class TestDistance extends LinearOpMode {
 
     void run(){
         //deployRobot();
+        test();
+        alignAndKnock();
+        toSpot();
+        //0:Straight to depot
+        //1:Around minerals to the other side of the depot
+        toDepot(0);
         dropGamePiece();
-        sleep2(2);
-//        test();
-//        alignAndKnock();
-//        toSpot();
-//        //0:Straight to depot
-//        //1:Around minerals to the other side of the depot
-//        toDepot(1);
-//        dropGamePiece();
-//        backToSpot();
-//        //0:Straight to left side of crater
-//        //1:Around minerals to right side of crater
-//        toCrater(1);
-//        motorsStop();
+        //0:To our side
+        //1:To opposite team crater
+        backToSpot(0);
+        //0:Straight to left side of crater
+        //1:Around minerals to right side of crater
+        toCrater(0);
+        motorsStop();
 
     }
 
     void deployRobot(){
-        //moveHand(1,0.5,0);
-        robot.handMotor.setPower(0.5);
-        sleep2(0.5);
-        robot.handMotor.setPower(0);
+        moveHand(1,0.5,0);
         //only a little bit
         moveHorizontal(1,0.5,0);
         //drop to the ground
         moveVertical(1,0.5,0);
-        robot.handMotor.setPower(-0.5);
-        sleep2(0.5);
-        robot.handMotor.setPower(0);
     }
 
     void test(){
@@ -236,33 +230,50 @@ public class TestDistance extends LinearOpMode {
         }
     }
     void dropGamePiece(){
-        robot.leftHand.setPosition(1);
-        robot.rightHand.setPosition(1);
+        robot.leftHand.setPosition(0);
+        robot.rightHand.setPosition(0);
         sleep2(2);
         robot.rightHand.setPosition(0.5);
         robot.leftHand.setPosition(0.5);
     }
-    void backToSpot(){
-        if(depotSelection == 0){
-            faceToTheRight(45-2);
-            move(60);
-        }else if(depotSelection ==1){
-            moveBackward(45);
-            face0();
-            move(80);
-            faceToTheRight(45-2);
+    void backToSpot(int selection){
+        if(selection == 0 ) {
+            craterSelection = 0;
+            if (depotSelection == 0) {
+                faceToTheRight(45 - 2);
+                move(60);
+            } else if (depotSelection == 1) {
+                moveBackward(45);
+                face0();
+                move(80);
+                faceToTheRight(45 - 2);
+            }
+        }else if(selection == 1){
+            craterSelection = 1;
+            faceToTheLeft(45);
+            moveBackward(60);
         }
     }
     void toCrater(int selection){
-        if(selection == 0){
-            move(30);
-        }else if(selection == 1){
-            faceToTheRight(90);
-            move(80);
-            face0();
-            move(24);
+        if(craterSelection == 0) {
+            if (selection == 0) {
+                move(30);
+            } else if (selection == 1) {
+                faceToTheRight(90);
+                move(80);
+                face0();
+                move(24);
+            }
+        }else if(craterSelection == 1){
+            if(selection == 0){
+                moveBackward(30);
+            }else if(selection == 1){
+                faceToTheLeft(90);
+                moveBackward(80);
+                face0();
+                moveBackward(24);
+            }
         }
-
     }
 
     void moveVertical( double inches,double speed, int direction){
