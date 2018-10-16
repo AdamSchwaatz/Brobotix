@@ -30,11 +30,10 @@ public class MecanumBasebot
     public DcMotor lift = null;
     public DcMotor handMotor = null;
     public DcMotor push = null;
-//    public Servo    leftServo = null;
-//    public Servo    rightServo = null;
     public Servo rightHand = null;
     public Servo leftHand = null;
     public Servo dumpHand = null;
+    public Servo lock = null;
 
     /* local OpMode members. */
     HardwareMap hwMap           =  null;
@@ -49,6 +48,7 @@ public class MecanumBasebot
     public void init(HardwareMap ahwMap) {
         // Save reference to Hardware map
         hwMap = ahwMap;
+
         // Define and Initialize Motors
         leftFrontMotor   = hwMap.dcMotor.get("left_front");
         rightFrontMotor  = hwMap.dcMotor.get("right_front");
@@ -65,6 +65,7 @@ public class MecanumBasebot
         lift.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         handMotor.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         push.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+
         leftFrontMotor.setDirection(DcMotorSimple.Direction.FORWARD);
         rightFrontMotor.setDirection(DcMotorSimple.Direction.REVERSE);
         leftRearMotor.setDirection(DcMotorSimple.Direction.FORWARD);
@@ -73,12 +74,10 @@ public class MecanumBasebot
         handMotor.setDirection(DcMotorSimple.Direction.FORWARD);
         push.setDirection(DcMotorSimple.Direction.FORWARD);
 
-//        leftServo = hwMap.servo.get("left");
-//        rightServo = hwMap.servo.get("right");
         leftHand = hwMap.servo.get("left_hand");
         rightHand = hwMap.servo.get("right_hand");
         dumpHand = hwMap.servo.get("dump_hand");
-
+        lock = hwMap.servo.get("lock");
 
         // Set all motors to zero power
         leftFrontMotor.setPower(0);
@@ -88,6 +87,7 @@ public class MecanumBasebot
         lift.setPower(0);
         handMotor.setPower(0);
         push.setPower(0);
+
         // Set all motors to run without encoders.
         // May want to use RUN_USING_ENCODERS if encoders are installed.
         leftFrontMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);

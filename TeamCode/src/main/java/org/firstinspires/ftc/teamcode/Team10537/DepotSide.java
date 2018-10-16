@@ -6,7 +6,6 @@ import com.disnodeteam.dogecv.detectors.roverrukus.GoldAlignDetector;
 import com.qualcomm.hardware.bosch.BNO055IMU;
 import com.qualcomm.hardware.bosch.JustLoggingAccelerationIntegrator;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
@@ -26,9 +25,9 @@ import java.util.Locale;
  * Created by Adam on 11/27/2017.
  */
 //@Disabled
-@Autonomous(name="TestDistance", group ="Concept")
+@Autonomous(name="DepotSide", group ="Concept")
 
-public class TestDistance extends LinearOpMode {
+public class DepotSide extends LinearOpMode {
 
     public enum GoldLocation {
         UNKNOWN,
@@ -45,8 +44,8 @@ public class TestDistance extends LinearOpMode {
     MecanumBasebot robot   = new MecanumBasebot();
     private ElapsedTime runtime = new ElapsedTime();
 
-    static final double     FORWARD_SPEED =  1;
-    static final double     TURN_SPEED    = 1;
+    static final double     FORWARD_SPEED =  0.5;
+    static final double     TURN_SPEED    = 0.25;
     static final double     ticks = 1120*0.89;
     static final double     ticksRevHD = 2240;
     static final double     ticksCoreHex = 288;
@@ -64,7 +63,7 @@ public class TestDistance extends LinearOpMode {
     static final double COUNTS_PER_INCH_VERTICAL =(ticksCoreHex * VERTICAL_GEAR_REDUCTION) / (SPOOL_DIAMETER_INCHES * PI);
     static final double COUNTS_PER_INCH_HAND =(ticksCoreHex * HAND_GEAR_REDUCTION) / (SHAFT_DIAMETER_INCHES * PI);
     int stage = 1;
-    int depotSelection;
+    int craterSelection;
 
     //Setup for the internal imu in the expansion hub
     BNO055IMU imu;
@@ -121,32 +120,34 @@ public class TestDistance extends LinearOpMode {
 
     void run(){
         //deployRobot();
+        test();
+        alignAndKnock();
+        //0:Straight from minerals
+        //1:Back to lander around left
+        //2:Back to lander around right
+        toDepot();
         dropGamePiece();
         sleep2(2);
-//        test();
-//        alignAndKnock();
-//        toSpot();
-//        //0:Straight to depot
-//        //1:Around minerals to the other side of the depot
-//        toDepot(1);
-//        dropGamePiece();
-//        backToSpot();
-//        //0:Straight to left side of crater
-//        //1:Around minerals to right side of crater
-//        toCrater(1);
-//        motorsStop();
+        //0:Our crater
+        //1:Other team's crater
+        toSpot(1);
+        //0:Straight to left side of crater
+        //1:Around minerals to right side of crater
+        toCrater(0);
+        motorsStop();
 
     }
 
     void deployRobot(){
         //moveHand(1,0.5,0);
-        robot.handMotor.setPower(0.5);
+        robot.handMotor.setPower(0.7);
         sleep2(0.5);
         robot.handMotor.setPower(0);
         //only a little bit
-        moveHorizontal(1,0.5,0);
+        //moveHorizontal(5,0.5,0);
         //drop to the ground
         moveVertical(1,0.5,0);
+        robot.lock.setPosition(0.5);
         robot.handMotor.setPower(-0.5);
         sleep2(0.5);
         robot.handMotor.setPower(0);
@@ -176,93 +177,82 @@ public class TestDistance extends LinearOpMode {
     void alignAndKnock(){
         switch(location){
             case UNKNOWN:
-                move(25+9);
+                move(25+18);
                 break;
             case LEFT:
                 faceToTheLeft(32);
-                move(29+9);
+                move(29+18);
                 break;
             case CENTER:
-                move(25+9);
+                move(25+18);
                 break;
             case RIGHT:
                 faceToTheRight(32);
-                move(29+9);
+                move(29+18);
                 break;
             default:
-                move(25+9);
+                move(25+18);
                 break;
         }
     }
-    void toSpot(){
+    void toDepot(){
         switch(location){
             case UNKNOWN:
-                moveBackward(25+8);
-                faceToTheLeft(45);
-                move(52);
+                move(19+18);
                 break;
             case LEFT:
-                moveBackward(29+8);
-                faceToTheLeft(45);
-                move(52);
+                faceToTheRight(51);
+                move(24+18);
                 break;
             case CENTER:
-                moveBackward(25+8);
-                faceToTheLeft(45);
-                move(52);
+                move(19+18);
                 break;
             case RIGHT:
-                moveBackward(29+8);
-                faceToTheLeft(45);
-                move(52);
+                faceToTheLeft(51);
+                move(24+18);
                 break;
             default:
-                moveBackward(25+8);
-                faceToTheLeft(45);
-                move(52);
-        }
-    }
-    void toDepot(int selection){
-        if(selection == 0){
-            depotSelection = 0;
-            faceToTheRight(45-2);
-            moveBackward(72);
-        }else if(selection == 1){
-            depotSelection = 1;
-            faceToTheLeft(5);
-            moveBackward(80);
-            faceToTheLeft(45);
-            move(48);
+                move(19+18);
         }
     }
     void dropGamePiece(){
-        robot.leftHand.setPosition(1);
-        robot.rightHand.setPosition(1);
+        robot.leftHand.setPosition(0);
+        robot.rightHand.setPosition(0);
         sleep2(2);
         robot.rightHand.setPosition(0.5);
         robot.leftHand.setPosition(0.5);
     }
-    void backToSpot(){
-        if(depotSelection == 0){
-            faceToTheRight(45-2);
-            move(60);
-        }else if(depotSelection ==1){
-            moveBackward(45);
-            face0();
-            move(80);
-            faceToTheRight(45-2);
+    void toSpot(int selection){
+        if(selection == 0) {
+            faceToTheLeft(45 + 5);
+            moveBackward(60);
+            craterSelection = 0;
+        }else if(selection ==1){
+            faceToTheRight(45);
+            moveBackward(60);
+            craterSelection = 1;
         }
     }
     void toCrater(int selection){
-        if(selection == 0){
-            move(30);
-        }else if(selection == 1){
-            faceToTheRight(90);
-            move(80);
-            face0();
-            move(24);
+        if(craterSelection == 0) {
+            if (selection == 0) {
+                moveBackward(30);
+            } else if (selection == 0) {
+                face0();
+                moveBackward(80);
+                faceToTheRight(45);
+                move(24);
+            }
+        }else if(craterSelection == 1){
+            if(selection ==0){
+                moveBackward(30);
+            }else if(selection == 1){
+                face0();
+                moveBackward(80);
+                faceToTheRight(45);
+                move(24);
+            }
         }
-
     }
 
     void moveVertical( double inches,double speed, int direction){
@@ -437,7 +427,7 @@ public class TestDistance extends LinearOpMode {
         robot.leftRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.rightRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
     }
-    void faceRight(){
+        void faceRight(){
         //Face 90 degrees right of the starting direction
         robot.leftFrontMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         robot.rightFrontMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);

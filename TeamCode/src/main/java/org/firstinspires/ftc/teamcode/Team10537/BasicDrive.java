@@ -44,11 +44,11 @@ public class BasicDrive extends LinearOpMode {
 
             //Arm Controls
             while(gamepad1.x){
-                robot.leftHand.setPosition(1);
+                //robot.leftHand.setPosition(1);
                 robot.rightHand.setPosition(1);
             }
             while(gamepad1.y){
-                robot.leftHand.setPosition(0);
+                //robot.leftHand.setPosition(0);
                 robot.rightHand.setPosition(0);
             }
 
