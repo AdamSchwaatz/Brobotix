@@ -1,8 +1,6 @@
 package org.firstinspires.ftc.teamcode.Team10537;
 
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
@@ -11,9 +9,9 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  * Created by Adam on 2/17/2018.
  */
 
-@TeleOp(name="Mecanum Drive", group="Adam")
+@TeleOp(name="Mecanum Testing Drive", group="Adam")
 
-public class MecanumDrive extends LinearOpMode {
+public class MecanumTestingDrive extends LinearOpMode {
 
     private ElapsedTime runtime  = new ElapsedTime();
     MecanumBasebot robot    = new MecanumBasebot();   // Use a Pushbot's hardware
@@ -34,6 +32,12 @@ public class MecanumDrive extends LinearOpMode {
     static final double COUNTS_PER_INCH_HORIZONTAL =(ticksRevHD * HORIZONTAL_GEAR_REDUCTION) / (WHEEL_DIAMETER_INCHES * PI);
     static final double COUNTS_PER_INCH_VERTICAL =(ticksCoreHex * VERTICAL_GEAR_REDUCTION) / (WHEEL_DIAMETER_INCHES * PI);
     static final double COUNTS_PER_INCH_HAND =(ticksCoreHex * HAND_GEAR_REDUCTION) / (SHAFT_DIAMETER_INCHES * PI);
+    public double buttonTime = 0.3;
+    public double dumpTime = 0;
+    public double liftTime = 0;
+    public double spinTime = 0;
+    public double pushTime = 0;
+    public double dropTime = 0;
     public int dumpPosition = 0;
     public int liftPosition = 0;
     public int spinDirection = 0;
@@ -51,19 +55,6 @@ public class MecanumDrive extends LinearOpMode {
     public boolean pushGo = false;
     public boolean liftGo = false;
     public boolean handGo = false;
-
-    public enum Status {
-        Starting,
-        Lifting,
-        Pushing,
-        Hand,
-        LP,
-        LH,
-        PH,
-        LPH
-    }
-
-    Status status = Status.Starting;
 
 
 //            Gamepad 1       Gampepad 2
@@ -99,82 +90,30 @@ public class MecanumDrive extends LinearOpMode {
         robot.handMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         robot.push.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
+        robot.handMotor.setTargetPosition(0);
+        robot.lift.setTargetPosition(0);
+        robot.push.setTargetPosition(0);
+
         robot.handMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         robot.lift.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-        Status status = Status.Starting;
+        robot.push.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+
 
 
         while(opModeIsActive()){
 
-            while (status == Status.Starting) {
-                driving();
+            driving();
+            robot.lift.setPower(liftSpeed);
+            robot.push.setPower(pushSpeed);
+            robot.handMotor.setPower(handSpeed);
+            if(!robot.lift.isBusy()){
+                liftGo = false;
             }
-            while(status == Status.Lifting){
-                driving();
-                robot.lift.setPower(liftSpeed);
-                if(!robot.lift.isBusy()){
-                    liftGo = false;
-                }
+            if(!robot.push.isBusy()){
+                pushGo = false;
             }
-            while(status == Status.Pushing){
-                driving();
-                robot.push.setPower(pushSpeed);
-                if(!robot.push.isBusy()){
-                    pushGo = false;
-                }
-            }
-            while(status == Status.Hand){
-                driving();
-                robot.handMotor.setPower(handSpeed);
-                if(!robot.handMotor.isBusy()){
-                    handGo = false;
-                }
-            }
-            while(status == Status.LPH){
-                driving();
-                robot.lift.setPower(liftSpeed);
-                robot.push.setPower(pushSpeed);
-                robot.handMotor.setPower(handSpeed);
-                if(!robot.lift.isBusy()){
-                    liftGo = false;
-                }
-                if(!robot.push.isBusy()){
-                    pushGo = false;
-                }
-                if(!robot.handMotor.isBusy()){
-                    handGo = false;
-                }
-            }
-            while(status == Status.LP){
-                driving();
-                robot.lift.setPower(liftSpeed);
-                robot.push.setPower(pushSpeed);
-                if(!robot.lift.isBusy()){
-                    liftGo = false;
-                }
-                if(!robot.push.isBusy()){
-                    pushGo = false;
-                }
-            }while(status == Status.LH){
-                driving();
-                robot.lift.setPower(liftSpeed);
-                robot.handMotor.setPower(handSpeed);
-                if(!robot.lift.isBusy()){
-                    liftGo = false;
-                }
-                if(!robot.handMotor.isBusy()){
-                    handGo = false;
-                }
-            }while(status == Status.PH){
-                driving();
-                robot.push.setPower(pushSpeed);
-                robot.handMotor.setPower(handSpeed);
-                if(!robot.push.isBusy()){
-                    pushGo = false;
-                }
-                if(!robot.handMotor.isBusy()){
-                    handGo = false;
-                }
+            if(!robot.handMotor.isBusy()){
+                handGo = false;
             }
         }
         robot.lift.setPower(0);
@@ -186,25 +125,6 @@ public class MecanumDrive extends LinearOpMode {
         robot.rightRearMotor.setPower(0);
     }
 
-    void checkStatus(){
-        if(liftGo&&pushGo&&handGo){
-            status = Status.LPH;
-        }else if(liftGo&&pushGo){
-            status = Status.LP;
-        }else if(pushGo&&handGo){
-            status = Status.PH;
-        }else if(liftGo&&handGo){
-            status = Status.LH;
-        }else if(liftGo){
-            status = Status.Lifting;
-        }else if(pushGo){
-            status = Status.Pushing;
-        }else if(handGo){
-            status = Status.Hand;
-        }else{
-            status = Status.Starting;
-        }
-    }
     void checkButtons(){
         if(!gamepad1.x){
             x1Pressed = false;
@@ -233,12 +153,10 @@ public class MecanumDrive extends LinearOpMode {
     }
 
     void driving(){
-        checkStatus();
         checkButtons();
 
         telemetry.addData("Status", "Run Time: " + runtime.toString());
         telemetry.addData("Status", "Gamepad1: " + gamepad1.toString());
-        telemetry.addData("Status","Status: " + status);
         telemetry.update();
 
         //Driving
@@ -255,10 +173,8 @@ public class MecanumDrive extends LinearOpMode {
         robot.rightRearMotor.setPower(v4);
 
         //Lift Control
-        if(gamepad2.left_stick_y>0||gamepad2.left_stick_y<0) {
-            robot.lift.setTargetPosition((int)(robot.lift.getCurrentPosition()+10));
-            robot.lift.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            robot.lift.setPower(liftSpeed);
+        if(!robot.lift.isBusy()){
+            robot.lift.setPower(gamepad2.left_stick_y);
         }
         //Hand Control
         if(!robot.handMotor.isBusy()){
@@ -279,7 +195,6 @@ public class MecanumDrive extends LinearOpMode {
 
         //Spinners
         if(gamepad1.x && !x1Pressed){
-            x1Pressed = true;
             if(spinDirection == 0){
                 robot.rightHand.setPosition(1);
                 robot.leftHand.setPosition(1);
@@ -297,19 +212,19 @@ public class MecanumDrive extends LinearOpMode {
 
         //Dump Hand
         if(gamepad1.b && !b1Pressed){
-            b1Pressed = true;
             if(dumpPosition == 0){
                 robot.dumpHand.setPosition(1);
                 dumpPosition = 1;
+                dumpTime = runtime.seconds();
             }else if(dumpPosition == 1){
                 robot.dumpHand.setPosition(0);
                 dumpPosition = 0;
+                dumpTime = runtime.seconds();
             }
         }
 
         //Unlock
         if(gamepad1.y && !y1Pressed){
-            y1Pressed = true;
             if(lockPosition == 0){
                 robot.lock.setPosition(0);
                 lockPosition = 1;
@@ -321,7 +236,6 @@ public class MecanumDrive extends LinearOpMode {
 
         //Lift
         if(gamepad2.y&&!y2Pressed){
-            y2Pressed = true;
             if (liftPosition == 0) {
                 liftGo = true;
                 //9.5
@@ -335,10 +249,8 @@ public class MecanumDrive extends LinearOpMode {
             }
         }
 
-
         //Push Arm
         if(gamepad2.x&&!x2Pressed){
-            x2Pressed = true;
             if(pushPosition == 0){
                 pushGo = true;
                 moveHorizontal(6, 0);
@@ -352,7 +264,6 @@ public class MecanumDrive extends LinearOpMode {
 
         //Hand Drop
         if(gamepad2.b&&!b2Pressed){
-            b2Pressed = true;
             if(dropPosition == 0){
                 moveHand(5,0);
                 liftPosition = 1;
@@ -367,6 +278,7 @@ public class MecanumDrive extends LinearOpMode {
         //Intended to move the distance forward in inches passed to the function
         // How far are we to move, in ticks instead of revolutions
         int denc = (int)Math.round(inches * COUNTS_PER_INCH_VERTICAL);
+        robot.lift.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         // Tell the motors where we are going
         int liftDistance;
         if(direction == 0){
@@ -381,7 +293,6 @@ public class MecanumDrive extends LinearOpMode {
         //Run
         robot.lift.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         robot.lift.setPower(liftSpeed);
-        status = Status.Lifting;
         //liftGo = true;
         // Give them the power level
 //        robot.lift.setPower(speed);
@@ -410,7 +321,6 @@ public class MecanumDrive extends LinearOpMode {
         //Run
         robot.push.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         // Give them the power level
-        robot.push.setPower(pushSpeed);
         //Wait until they are done
 //        while(robot.push.isBusy()){
 //            robot.push.setPower(speed);
@@ -419,7 +329,6 @@ public class MecanumDrive extends LinearOpMode {
 //        robot.push.setPower(0);
     }
     void moveHand( double inches, int direction){
-
         //Intended to move the distance forward in inches passed to the function
         // How far are we to move, in ticks instead of revolutions
         int denc = (int)Math.round(inches * COUNTS_PER_INCH_HAND);
