@@ -29,6 +29,17 @@ import java.util.Locale;
 
 public class CraterSide extends LinearOpMode {
 
+    //0:Straight to depot
+    //1:Around minerals to the other side of the depot
+    static final int selection1 = 0;
+    //0:To our side
+    //1:To opposite team crater
+    static final int selection2 = 0;
+    //0:Straight to left side of crater
+    //1:Around minerals to right side of crater
+    //**Note: They are opposite side of crater if the other alliance crater**
+    static final int selection3 = 0;
+
     public enum GoldLocation {
         UNKNOWN,
         LEFT,
@@ -120,35 +131,82 @@ public class CraterSide extends LinearOpMode {
     }
 
     void run(){
-        //deployRobot();
+        deployRobot();
         test();
         alignAndKnock();
         toSpot();
         //0:Straight to depot
         //1:Around minerals to the other side of the depot
-        toDepot(0);
+        toDepot(selection1);
         dropGamePiece();
         //0:To our side
         //1:To opposite team crater
-        backToSpot(0);
+        backToSpot(selection2);
         //0:Straight to left side of crater
         //1:Around minerals to right side of crater
-        toCrater(0);
+        toCrater(selection3);
         motorsStop();
 
     }
 
     void deployRobot(){
-        moveHand(1,0.5,0);
-        //only a little bit
-        moveHorizontal(1,0.5,0);
-        //drop to the ground
-        moveVertical(1,0.5,0);
+        //Change to set position once the cord is in
+        robot.handMotor.setPower(-0.5);
+        moveVertical(6,1,0);
+        turnRight(5);
+        moveAndVertical();
+        face0();
+    }
+    void moveAndVertical(){
+        int denc = (int)Math.round(5 * COUNTS_PER_INCH);
+        int dencVert = (int)Math.round(3 * COUNTS_PER_INCH_VERTICAL);
+        // Tell the motors where we are going
+        robot.leftFrontMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rightFrontMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.leftRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rightRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.lift.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        int leftFront = robot.leftFrontMotor.getCurrentPosition() + (int)(denc);
+        int rightFront = robot.rightFrontMotor.getCurrentPosition() + (int)(denc);
+        int leftRear = robot.leftRearMotor.getCurrentPosition() + (int)(denc);
+        int rightRear = robot.rightRearMotor.getCurrentPosition() + (int)(denc);
+        int lift = robot.lift.getCurrentPosition() + dencVert;
+        robot.leftFrontMotor.setTargetPosition(leftFront);
+        robot.rightFrontMotor.setTargetPosition(rightFront);
+        robot.leftRearMotor.setTargetPosition(leftRear);
+        robot.rightRearMotor.setTargetPosition(rightRear);
+        robot.lift.setTargetPosition(lift);
+        //Run
+        robot.leftFrontMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.rightFrontMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.leftRearMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.rightRearMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        // Give them the power level
+        robot.leftFrontMotor.setPower(1);
+        robot.rightFrontMotor.setPower(1);
+        robot.leftRearMotor.setPower(1);
+        robot.rightRearMotor.setPower(1);
+        robot.lift.setPower(1);
+        //Wait until they are done
+        double startTime = runtime.seconds();
+        while((robot.leftFrontMotor.isBusy() ||robot.rightFrontMotor.isBusy() || robot.leftRearMotor.isBusy() || robot.rightRearMotor.isBusy()||robot.lift.isBusy())&&(runtime.seconds()-startTime)<1.5){
+            robot.leftFrontMotor.setPower(1);
+            robot.rightFrontMotor.setPower(1);
+            robot.leftRearMotor.setPower(1);
+            robot.rightRearMotor.setPower(1);
+            robot.lift.setPower(1);
+        }
+        //Stop the motors
+        robot.leftFrontMotor.setPower(0);
+        robot.rightFrontMotor.setPower(0);
+        robot.leftRearMotor.setPower(0);
+        robot.rightRearMotor.setPower(0);
+        robot.lift.setPower(0);
     }
 
     void test(){
         runtime.reset();
-        while(!detector.isFound()&&runtime.seconds()<5){
+        while(!detector.isFound()&&runtime.seconds()<2){
             telemetry.update();
         }
         if(detector.isFound()){
@@ -219,8 +277,8 @@ public class CraterSide extends LinearOpMode {
     void toDepot(int selection){
         if(selection == 0){
             depotSelection = 0;
-            faceToTheRight(45-2);
-            moveBackward(72);
+            faceToTheLeft(135);
+            move(72);
         }else if(selection == 1){
             depotSelection = 1;
             faceToTheLeft(5);
@@ -240,13 +298,13 @@ public class CraterSide extends LinearOpMode {
         if(selection == 0 ) {
             craterSelection = 0;
             if (depotSelection == 0) {
-                faceToTheRight(45 - 2);
+                faceToTheRight(45 + 2);
                 move(60);
             } else if (depotSelection == 1) {
                 moveBackward(45);
                 face0();
                 move(80);
-                faceToTheRight(45 - 2);
+                faceToTheRight(45 + 2);
             }
         }else if(selection == 1){
             craterSelection = 1;
@@ -417,6 +475,47 @@ public class CraterSide extends LinearOpMode {
         robot.leftRearMotor.setPower(0);
         robot.rightRearMotor.setPower(0);
     }
+    void moveMotorsFast(double leftF, double rightF, double leftR, double rightR, double inches,double speed){
+        //Intended to move the distance forward in inches passed to the function
+        // How far are we to move, in ticks instead of revolutions
+        int denc = (int)Math.round(inches * COUNTS_PER_INCH);
+        // Tell the motors where we are going
+        robot.leftFrontMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rightFrontMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.leftRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rightRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        int leftFront = robot.leftFrontMotor.getCurrentPosition() + (int)(denc*leftF);
+        int rightFront = robot.rightFrontMotor.getCurrentPosition() + (int)(denc*rightF);
+        int leftRear = robot.leftRearMotor.getCurrentPosition() + (int)(denc*leftR);
+        int rightRear = robot.rightRearMotor.getCurrentPosition() + (int)(denc*rightR);
+        robot.leftFrontMotor.setTargetPosition(leftFront);
+        robot.rightFrontMotor.setTargetPosition(rightFront);
+        robot.leftRearMotor.setTargetPosition(leftRear);
+        robot.rightRearMotor.setTargetPosition(rightRear);
+        //Run
+        robot.leftFrontMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.rightFrontMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.leftRearMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.rightRearMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        // Give them the power level
+        robot.leftFrontMotor.setPower(speed);
+        robot.rightFrontMotor.setPower(speed);
+        robot.leftRearMotor.setPower(speed);
+        robot.rightRearMotor.setPower(speed);
+        //Wait until they are done
+        double startTime = runtime.seconds();
+        while((robot.leftFrontMotor.isBusy() ||robot.rightFrontMotor.isBusy() || robot.leftRearMotor.isBusy() || robot.rightRearMotor.isBusy())&&(runtime.seconds()-startTime)<1){
+            robot.leftFrontMotor.setPower(speed);
+            robot.rightFrontMotor.setPower(speed);
+            robot.leftRearMotor.setPower(speed);
+            robot.rightRearMotor.setPower(speed);
+        }
+        //Stop the motors
+        robot.leftFrontMotor.setPower(0);
+        robot.rightFrontMotor.setPower(0);
+        robot.leftRearMotor.setPower(0);
+        robot.rightRearMotor.setPower(0);
+    }
     void move(double inches){
         moveMotors(1,1,1,1,inches,FORWARD_SPEED);
     }
@@ -424,7 +523,7 @@ public class CraterSide extends LinearOpMode {
         moveMotors(-1,-1,-1,-1,inches, FORWARD_SPEED);
     }
     void turnRight(double inches){
-        moveMotors(1,-1,1,-1,inches, TURN_SPEED);
+        moveMotorsFast(1,-1,1,-1,inches, TURN_SPEED);
     }
     void faceLeft(){
         //Face 90 degrees left of the starting direction
@@ -433,7 +532,7 @@ public class CraterSide extends LinearOpMode {
         robot.leftRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         robot.rightRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         runtime.reset();
-        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle<82.5 && runtime.seconds() < 5) {
+        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle<82.5 && runtime.seconds() < 1) {
             robot.leftFrontMotor.setPower(-TURN_SPEED);
             robot.rightFrontMotor.setPower(TURN_SPEED);
             robot.leftRearMotor.setPower(-TURN_SPEED);
@@ -455,13 +554,13 @@ public class CraterSide extends LinearOpMode {
         robot.leftRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         robot.rightRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         runtime.reset();
-        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>-82.5 && runtime.seconds() < 5) {
+        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>-82.5 && runtime.seconds() < 1) {
             robot.leftFrontMotor.setPower(TURN_SPEED);
             robot.rightFrontMotor.setPower(-TURN_SPEED);
             robot.leftRearMotor.setPower(TURN_SPEED);
             robot.rightRearMotor.setPower(-TURN_SPEED);
         }
-        if(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>-82.5 && runtime.seconds() < 5){
+        if(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>-82.5 && runtime.seconds() < 1){
             while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>-82.5) {
                 robot.leftFrontMotor.setPower(TURN_SPEED+0.1);
                 robot.rightFrontMotor.setPower(-TURN_SPEED+0.1);
@@ -487,14 +586,14 @@ public class CraterSide extends LinearOpMode {
         float angle = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle;
         runtime.reset();
         if(angle > 0) {
-            while (imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle > 7.5&& runtime.seconds() < 5) {
+            while (imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle > 7.5&& runtime.seconds() < 1) {
                 robot.leftFrontMotor.setPower(TURN_SPEED);
                 robot.rightFrontMotor.setPower(-TURN_SPEED);
                 robot.leftRearMotor.setPower(TURN_SPEED);
                 robot.rightRearMotor.setPower(-TURN_SPEED);
             }
         }else if(angle < 0){
-            while (imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle < -7.5 && runtime.seconds() < 5) {
+            while (imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle < -7.5 && runtime.seconds() < 1) {
                 robot.leftFrontMotor.setPower(-TURN_SPEED);
                 robot.rightFrontMotor.setPower(TURN_SPEED);
                 robot.leftRearMotor.setPower(-TURN_SPEED);
@@ -516,7 +615,7 @@ public class CraterSide extends LinearOpMode {
         robot.leftRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         robot.rightRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         runtime.reset();
-        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle<172.5 && runtime.seconds() < 5) {
+        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle<172.5 && runtime.seconds() < 1) {
             robot.leftFrontMotor.setPower(TURN_SPEED);
             robot.rightFrontMotor.setPower(-TURN_SPEED);
             robot.leftRearMotor.setPower(TURN_SPEED);
@@ -538,13 +637,13 @@ public class CraterSide extends LinearOpMode {
         robot.leftRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         robot.rightRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         runtime.reset();
-        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>((-degrees)+7.5) && runtime.seconds() < 5) {
+        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>((-degrees)+7.5) && runtime.seconds() < 2) {
             robot.leftFrontMotor.setPower(TURN_SPEED);
             robot.rightFrontMotor.setPower(-TURN_SPEED);
             robot.leftRearMotor.setPower(TURN_SPEED);
             robot.rightRearMotor.setPower(-TURN_SPEED);
         }
-        if(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>((-degrees)+7.5) && runtime.seconds() < 5){
+        if(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>((-degrees)+7.5) && runtime.seconds() < 2){
             while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle>((-degrees)+7.5)) {
                 robot.leftFrontMotor.setPower(TURN_SPEED+0.1);
                 robot.rightFrontMotor.setPower(-TURN_SPEED+0.1);
@@ -568,7 +667,7 @@ public class CraterSide extends LinearOpMode {
         robot.leftRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         robot.rightRearMotor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         runtime.reset();
-        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle<(degrees-7.5) && runtime.seconds() < 5) {
+        while(imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle<(degrees-7.5) && runtime.seconds() < 2) {
             robot.leftFrontMotor.setPower(-TURN_SPEED);
             robot.rightFrontMotor.setPower(TURN_SPEED);
             robot.leftRearMotor.setPower(-TURN_SPEED);
@@ -584,7 +683,7 @@ public class CraterSide extends LinearOpMode {
         robot.rightRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
     }
     void turnLeft(double inches){
-        moveMotors(-1,1,-1,1,inches,TURN_SPEED);
+        moveMotorsFast(-1,1,-1,1,inches,TURN_SPEED);
     }
     void strafeLeft(double inches){
         moveMotors(-1,1,1,-1,inches*2,TURN_SPEED);

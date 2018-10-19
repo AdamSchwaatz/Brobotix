@@ -116,40 +116,87 @@ public class TestDistance extends LinearOpMode {
         telemetry.addData("Back Right ", String.format("number: " + robot.rightRearMotor.getCurrentPosition()));
         //Run the autonomous program
         run();
-
+        detector.disable();
     }
 
     void run(){
-        //deployRobot();
-        dropGamePiece();
-        sleep2(2);
-//        test();
-//        alignAndKnock();
-//        toSpot();
-//        //0:Straight to depot
-//        //1:Around minerals to the other side of the depot
-//        toDepot(1);
-//        dropGamePiece();
-//        backToSpot();
-//        //0:Straight to left side of crater
-//        //1:Around minerals to right side of crater
-//        toCrater(1);
-//        motorsStop();
-
+        deployRobot();
     }
 
     void deployRobot(){
+        //Change this to the moveHand function when the encoder extender is here
         //moveHand(1,0.5,0);
-        robot.handMotor.setPower(0.5);
-        sleep2(0.5);
-        robot.handMotor.setPower(0);
+//        robot.handMotor.setPower(0.5);
+//        sleep2(0.5);
+//        robot.handMotor.setPower(0);
         //only a little bit
-        moveHorizontal(1,0.5,0);
+        //moveHorizontal(1,0.5,0);
+        //Unlock the robot
+//        robot.lock.setPosition(0.5);
+////        moveVertical(1,0.5,1);
+//        robot.lift.setPower(1);
+//        sleep2(0.125);
+//        robot.lift.setPower(-.5);
+//        sleep2(2);
+//        moveVertical(1,0.5,0);
         //drop to the ground
-        moveVertical(1,0.5,0);
-        robot.handMotor.setPower(-0.5);
-        sleep2(0.5);
-        robot.handMotor.setPower(0);
+        //might be 8.5 CHANGE LATER
+        moveVertical(6,1,0);
+        //Change this to the moveHand function when the encoder extender is here
+//        robot.handMotor.setPower(-0.5);
+//        sleep2(0.5);
+//        robot.handMotor.setPower(0);
+        turnRight(5);
+        moveAndVertical();
+//        move(5);
+//        moveVertical(3,1,1);
+        face0();
+    }
+    void moveAndVertical(){
+        int denc = (int)Math.round(5 * COUNTS_PER_INCH);
+        int dencVert = (int)Math.round(3 * COUNTS_PER_INCH_VERTICAL);
+        // Tell the motors where we are going
+        robot.leftFrontMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rightFrontMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.leftRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rightRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.lift.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        int leftFront = robot.leftFrontMotor.getCurrentPosition() + (int)(denc);
+        int rightFront = robot.rightFrontMotor.getCurrentPosition() + (int)(denc);
+        int leftRear = robot.leftRearMotor.getCurrentPosition() + (int)(denc);
+        int rightRear = robot.rightRearMotor.getCurrentPosition() + (int)(denc);
+        int lift = robot.lift.getCurrentPosition() + dencVert;
+        robot.leftFrontMotor.setTargetPosition(leftFront);
+        robot.rightFrontMotor.setTargetPosition(rightFront);
+        robot.leftRearMotor.setTargetPosition(leftRear);
+        robot.rightRearMotor.setTargetPosition(rightRear);
+        robot.lift.setTargetPosition(lift);
+        //Run
+        robot.leftFrontMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.rightFrontMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.leftRearMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.rightRearMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        // Give them the power level
+        robot.leftFrontMotor.setPower(1);
+        robot.rightFrontMotor.setPower(1);
+        robot.leftRearMotor.setPower(1);
+        robot.rightRearMotor.setPower(1);
+        robot.lift.setPower(1);
+        //Wait until they are done
+        double startTime = runtime.seconds();
+        while((robot.leftFrontMotor.isBusy() ||robot.rightFrontMotor.isBusy() || robot.leftRearMotor.isBusy() || robot.rightRearMotor.isBusy()||robot.lift.isBusy())&&(runtime.seconds()-startTime)<1.5){
+            robot.leftFrontMotor.setPower(1);
+            robot.rightFrontMotor.setPower(1);
+            robot.leftRearMotor.setPower(1);
+            robot.rightRearMotor.setPower(1);
+            robot.lift.setPower(1);
+        }
+        //Stop the motors
+        robot.leftFrontMotor.setPower(0);
+        robot.rightFrontMotor.setPower(0);
+        robot.leftRearMotor.setPower(0);
+        robot.rightRearMotor.setPower(0);
+        robot.lift.setPower(0);
     }
 
     void test(){
@@ -406,6 +453,47 @@ public class TestDistance extends LinearOpMode {
         robot.leftRearMotor.setPower(0);
         robot.rightRearMotor.setPower(0);
     }
+    void moveMotorsFast(double leftF, double rightF, double leftR, double rightR, double inches,double speed){
+        //Intended to move the distance forward in inches passed to the function
+        // How far are we to move, in ticks instead of revolutions
+        int denc = (int)Math.round(inches * COUNTS_PER_INCH);
+        // Tell the motors where we are going
+        robot.leftFrontMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rightFrontMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.leftRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        robot.rightRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        int leftFront = robot.leftFrontMotor.getCurrentPosition() + (int)(denc*leftF);
+        int rightFront = robot.rightFrontMotor.getCurrentPosition() + (int)(denc*rightF);
+        int leftRear = robot.leftRearMotor.getCurrentPosition() + (int)(denc*leftR);
+        int rightRear = robot.rightRearMotor.getCurrentPosition() + (int)(denc*rightR);
+        robot.leftFrontMotor.setTargetPosition(leftFront);
+        robot.rightFrontMotor.setTargetPosition(rightFront);
+        robot.leftRearMotor.setTargetPosition(leftRear);
+        robot.rightRearMotor.setTargetPosition(rightRear);
+        //Run
+        robot.leftFrontMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.rightFrontMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.leftRearMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        robot.rightRearMotor.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        // Give them the power level
+        robot.leftFrontMotor.setPower(speed);
+        robot.rightFrontMotor.setPower(speed);
+        robot.leftRearMotor.setPower(speed);
+        robot.rightRearMotor.setPower(speed);
+        //Wait until they are done
+        double startTime = runtime.seconds();
+        while((robot.leftFrontMotor.isBusy() ||robot.rightFrontMotor.isBusy() || robot.leftRearMotor.isBusy() || robot.rightRearMotor.isBusy())&&(runtime.seconds()-startTime)<1){
+            robot.leftFrontMotor.setPower(speed);
+            robot.rightFrontMotor.setPower(speed);
+            robot.leftRearMotor.setPower(speed);
+            robot.rightRearMotor.setPower(speed);
+        }
+        //Stop the motors
+        robot.leftFrontMotor.setPower(0);
+        robot.rightFrontMotor.setPower(0);
+        robot.leftRearMotor.setPower(0);
+        robot.rightRearMotor.setPower(0);
+    }
     void move(double inches){
         moveMotors(1,1,1,1,inches,FORWARD_SPEED);
     }
@@ -413,7 +501,7 @@ public class TestDistance extends LinearOpMode {
         moveMotors(-1,-1,-1,-1,inches, FORWARD_SPEED);
     }
     void turnRight(double inches){
-        moveMotors(1,-1,1,-1,inches, TURN_SPEED);
+        moveMotorsFast(1,-1,1,-1,inches, TURN_SPEED);
     }
     void faceLeft(){
         //Face 90 degrees left of the starting direction
@@ -573,7 +661,7 @@ public class TestDistance extends LinearOpMode {
         robot.rightRearMotor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
     }
     void turnLeft(double inches){
-        moveMotors(-1,1,-1,1,inches,TURN_SPEED);
+        moveMotorsFast(-1,1,-1,1,inches,TURN_SPEED);
     }
     void strafeLeft(double inches){
         moveMotors(-1,1,1,-1,inches*2,TURN_SPEED);
