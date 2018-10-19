@@ -29,6 +29,17 @@ import java.util.Locale;
 
 public class DepotSide extends LinearOpMode {
 
+    //0:Straight from minerals
+    //1:Back to lander around left
+    //2:Back to lander around right
+    static final int selection1= 0;
+    //0:Our crater
+    //1:Other team's crater
+    static final int selection2 = 1;
+    //0:Straight to left side of crater
+    //1:Around minerals to right side of crater
+    static final int selection3 = 0;
+
     public enum GoldLocation {
         UNKNOWN,
         LEFT,
@@ -44,24 +55,24 @@ public class DepotSide extends LinearOpMode {
     MecanumBasebot robot   = new MecanumBasebot();
     private ElapsedTime runtime = new ElapsedTime();
 
-    static final double     FORWARD_SPEED =  0.5;
+    static final double     FORWARD_SPEED =  1;
     static final double     TURN_SPEED    = 0.25;
     static final double     ticks = 1120*0.89;
     static final double     ticksRevHD = 2240;
     static final double     ticksCoreHex = 288;
     static final int        WHEEL_DIAMETER_INCHES = 4;
     static final int        SPOOL_DIAMETER_INCHES = 1;
-    static final double        SHAFT_DIAMETER_INCHES = 0.75;
+    static final double     SHAFT_DIAMETER_INCHES = 0.75;
     static final int        DRIVE_GEAR_REDUCTION = 1;
     static final double     VERTICAL_GEAR_REDUCTION = 2;
     static final int        HORIZONTAL_GEAR_REDUCTION = 1;
     static final int        HAND_GEAR_REDUCTION = 1;
     static final double     PI  = 3.1415;
     static final double     DISTANCE_FOR_90 = (7 * PI / 2) + 1.5;
-    static final double COUNTS_PER_INCH =(ticks * DRIVE_GEAR_REDUCTION) / (WHEEL_DIAMETER_INCHES * PI);
-    static final double COUNTS_PER_INCH_HORIZONTAL =(ticksRevHD * HORIZONTAL_GEAR_REDUCTION) / (SPOOL_DIAMETER_INCHES * PI);
-    static final double COUNTS_PER_INCH_VERTICAL =(ticksCoreHex * VERTICAL_GEAR_REDUCTION) / (SPOOL_DIAMETER_INCHES * PI);
-    static final double COUNTS_PER_INCH_HAND =(ticksCoreHex * HAND_GEAR_REDUCTION) / (SHAFT_DIAMETER_INCHES * PI);
+    static final double     COUNTS_PER_INCH =(ticks * DRIVE_GEAR_REDUCTION) / (WHEEL_DIAMETER_INCHES * PI);
+    static final double     COUNTS_PER_INCH_HORIZONTAL =(ticksRevHD * HORIZONTAL_GEAR_REDUCTION) / (SPOOL_DIAMETER_INCHES * PI);
+    static final double     COUNTS_PER_INCH_VERTICAL =(ticksCoreHex * VERTICAL_GEAR_REDUCTION) / (SPOOL_DIAMETER_INCHES * PI);
+    static final double     COUNTS_PER_INCH_HAND =(ticksCoreHex * HAND_GEAR_REDUCTION) / (SHAFT_DIAMETER_INCHES * PI);
     int stage = 1;
     int craterSelection;
 
@@ -125,15 +136,14 @@ public class DepotSide extends LinearOpMode {
         //0:Straight from minerals
         //1:Back to lander around left
         //2:Back to lander around right
-        toDepot();
+        toDepot(selection1);
         dropGamePiece();
-        sleep2(2);
         //0:Our crater
         //1:Other team's crater
-        toSpot(1);
+        toSpot(selection2);
         //0:Straight to left side of crater
         //1:Around minerals to right side of crater
-        toCrater(0);
+        toCrater(selection3);
         motorsStop();
 
     }
@@ -155,7 +165,7 @@ public class DepotSide extends LinearOpMode {
 
     void test(){
         runtime.reset();
-        while(!detector.isFound()&&runtime.seconds()<5){
+        while(!detector.isFound()&&runtime.seconds()<2){
             telemetry.update();
         }
         if(detector.isFound()){
@@ -195,7 +205,7 @@ public class DepotSide extends LinearOpMode {
                 break;
         }
     }
-    void toDepot(){
+    void toDepot(int selection){
         switch(location){
             case UNKNOWN:
                 move(19+18);
