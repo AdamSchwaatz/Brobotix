@@ -120,7 +120,8 @@ public class TestDistance extends LinearOpMode {
     }
 
     void run(){
-        deployRobot();
+       // deployRobot();
+        move(5);
     }
 
     void deployRobot(){

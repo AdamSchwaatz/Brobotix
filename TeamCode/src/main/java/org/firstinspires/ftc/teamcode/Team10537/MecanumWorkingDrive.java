@@ -43,18 +43,6 @@ public class MecanumWorkingDrive extends LinearOpMode {
     public boolean pushGo = false;
     public boolean liftGo = false;
 
-    public enum Status {
-        Starting,
-        Lifting,
-        Pushing,
-        Hand,
-        LP,
-        LH,
-        PH,
-        LPH
-    }
-
-    Status status = Status.Starting;
     @Override
     public void runOpMode() {
         robot.init(hardwareMap);

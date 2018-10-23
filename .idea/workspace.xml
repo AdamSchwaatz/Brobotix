@@ -10,434 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3614c07d-7721-465a-9df2-a8ee2a1ffa63" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumWorkingDrive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DogeCV/DogeCV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DogeCV/DogeCV.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/TeamCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/TeamCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/Buildings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/Buildings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/CzechWolf" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/CzechWolf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/FtcBlocks.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/FtcBlocks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/FtcBlocksProjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/FtcBlocksProjects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/FtcSounds.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/FtcSounds.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/RobotConfig.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/RobotConfig.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/RobotConfigDescriptionGenerate.xslt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/RobotConfigDescriptionGenerate.xslt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/RobotConfigTaxonomy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/RobotConfigTaxonomy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/RobotConfigTaxonomy.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/RobotConfigTaxonomy.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/blockly_compressed.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/blockly_compressed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/blocks_compressed.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/blocks_compressed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/javascript_compressed.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/javascript_compressed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/media/sprites.svg" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/media/sprites.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/msg/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blockly/msg/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/acceleration.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/acceleration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/acceleration_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/acceleration_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/analog_input.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/analog_input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/analog_output.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/analog_output.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_accelerometer.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_accelerometer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_gyroscope.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_gyroscope.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_orientation.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_orientation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_sound_pool.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_sound_pool.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_text_to_speech.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/android_text_to_speech.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/angular_velocity.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/angular_velocity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/bno055imu.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/bno055imu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/bno055imu_parameters.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/bno055imu_parameters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/clipboard_util.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/clipboard_util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/color.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/color.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/color_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/color_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/compass_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/compass_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/cr_servo.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/cr_servo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/dbg_log.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/dbg_log.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/dc_motor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/dc_motor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/digital_channel.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/digital_channel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/distance_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/distance_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/elapsed_time.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/elapsed_time.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/elapsed_time2.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/elapsed_time2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/gamepad.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/gamepad.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/gyro_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/gyro_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/hardware_util.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/hardware_util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/ir_seeker_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/ir_seeker_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/led.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/led.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/light_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/light_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/linear_op_mode.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/linear_op_mode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/lynx_i2c_color_range_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/lynx_i2c_color_range_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/magnetic_flux.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/magnetic_flux.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/matrix_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/matrix_f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/misc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/mr_i2c_compass_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/mr_i2c_compass_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/mr_i2c_range_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/mr_i2c_range_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/open_gl_matrix.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/open_gl_matrix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/optical_distance_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/optical_distance_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/orientation.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/orientation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/pidf_coefficients.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/pidf_coefficients.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/position.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/position.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/project_util.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/project_util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/quaternion.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/quaternion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/range.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/range.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/rev_blinkin_led_driver.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/rev_blinkin_led_driver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/BasicPOVDrive.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/BasicPOVDrive.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/BasicTankDrive.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/BasicTankDrive.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/ConceptDeviceInteraction.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/ConceptDeviceInteraction.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/ConceptSmoothServo.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/ConceptSmoothServo.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/ConceptTextToSpeech.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/ConceptTextToSpeech.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/ConceptVuMarkDetection.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/ConceptVuMarkDetection.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/RevBlinkinLed.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/RevBlinkinLed.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/SensorDigitalTouch.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/SensorDigitalTouch.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/SensorIMU.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/SensorIMU.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/SensorREVColorDistance.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/SensorREVColorDistance.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/default.blk" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/samples/default.blk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/servo.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/servo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/servo_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/servo_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/sound_util.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/sound_util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/system.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/system.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/telemetry.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/telemetry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/temperature.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/temperature.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/toolbox_util.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/toolbox_util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/touch_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/touch_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/ultrasonic_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/ultrasonic_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vars.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vector_f.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vector_f.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/velocity.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/velocity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/voltage_sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/voltage_sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_localizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_localizer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_localizer_parameters.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_localizer_parameters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_relic_recovery.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_relic_recovery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_rover_ruckus.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_rover_ruckus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_trackable.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_trackable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_trackable_default_listener.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_trackable_default_listener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_trackables.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/blocks/vuforia_trackables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/connection.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/connection.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/FtcBlocks.less" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/FtcBlocks.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/FtcBlocksProjects.less" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/FtcBlocksProjects.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/FtcSounds.less" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/FtcSounds.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/SourceCodePro.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/SourceCodePro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/bootstrap-theme.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/connection.less" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/connection.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/frame.less" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/frame.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/manage.less" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/css/manage.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/frame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/lists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/logic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/loops.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/loops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/math.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/math.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/procedures.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/procedures.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/variables.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/ftcblockly/generators/ftcjava/variables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/angular-resizable.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/angular-resizable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/jquery.contextmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/jquery.contextmenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/main.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/perfect-scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/perfect-scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/tether.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/css/tether.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/editor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ace.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/angular-messages.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/angular-messages.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/angular.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/angular.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/BufferedTokenStream.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/BufferedTokenStream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/CharStreams.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/CharStreams.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/CommonTokenFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/CommonTokenFactory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/CommonTokenStream.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/CommonTokenStream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/FileStream.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/FileStream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/InputStream.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/InputStream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/IntervalSet.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/IntervalSet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/LL1Analyzer.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/LL1Analyzer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Lexer.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Lexer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/ParserRuleContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/ParserRuleContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/PredictionContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/PredictionContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Recognizer.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Recognizer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/RuleContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/RuleContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Token.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Token.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/Utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/antlr4.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/antlr4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATN.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNConfigSet.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNConfigSet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNDeserializationOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNDeserializationOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNDeserializer.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNDeserializer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNSimulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNSimulator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNState.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNType.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ATNType.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/LexerATNSimulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/LexerATNSimulator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/LexerAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/LexerAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/LexerActionExecutor.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/LexerActionExecutor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ParserATNSimulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/ParserATNSimulator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/PredictionMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/PredictionMode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/SemanticContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/SemanticContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/Transition.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/Transition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/atn/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/dfa/DFA.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/dfa/DFA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/dfa/DFASerializer.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/dfa/DFASerializer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/dfa/DFAState.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/dfa/DFAState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/dfa/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/dfa/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/DiagnosticErrorListener.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/DiagnosticErrorListener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/ErrorListener.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/ErrorListener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/ErrorStrategy.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/ErrorStrategy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/Errors.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/Errors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/error/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/polyfills/codepointat.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/polyfills/codepointat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/polyfills/fromcodepoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/polyfills/fromcodepoint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/tree/Tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/tree/Tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/tree/Trees.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/tree/Trees.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/tree/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/antlr4/tree/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/es6-shim.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/es6-shim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ext-language_tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ext-language_tools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ext-spellcheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ext-spellcheck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ext-whitespace.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ext-whitespace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/flowtype.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/flowtype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ftclangtools.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ftclangtools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/JavaLexer.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/JavaLexer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/JavaListener.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/JavaListener.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/JavaParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/JavaParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/java/java.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/jquery.contextmenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/jquery.contextmenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/jquery.position.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/jquery.position.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/keybinding-emacs.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/keybinding-emacs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/keybinding-vim.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/keybinding-vim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-groovy.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-groovy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-java.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-java.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-json.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-markdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-properties.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-properties.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-text.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/mode-text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/perfect-scrollbar.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/perfect-scrollbar.jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/polyfills.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/polyfills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/require.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/require.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/snippets/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/snippets/java.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/snippets/markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/snippets/markdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/snippets/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/snippets/text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-chaos.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-chaos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-chrome.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-chrome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-github.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-github.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-monokai.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-monokai.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-solarized-dark.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-solarized-dark.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-solarized-light.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/theme-solarized-light.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/toe.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/toe.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ui-ace.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/ui-ace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/worker-base.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/worker-base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/worker-java.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/worker-java.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/worker-javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/worker-javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/worker-json.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/js/worker-json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/BasicOpMode_Iterative" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/BasicOpMode_Iterative" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/BasicOpMode_Linear" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/BasicOpMode_Linear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/BlankIterativeOpMode" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/BlankIterativeOpMode" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/BlankLinearOpMode" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/BlankLinearOpMode" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptCompassCalibration" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptCompassCalibration" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptDIMAsIndicator" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptDIMAsIndicator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptI2cAddressChange" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptI2cAddressChange" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptNullOp" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptNullOp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptRampMotorSpeed" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptRampMotorSpeed" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptRegisterOpModes" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptRegisterOpModes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptScanServo" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptScanServo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptTelemetry" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptTelemetry" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuMarkIdentification" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuMarkIdentification" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuMarkIdentificationWebcam" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuMarkIdentificationWebcam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuforiaNavRoverRuckus" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuforiaNavRoverRuckus" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuforiaNavigation" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuforiaNavigation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuforiaNavigationWebcam" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/ConceptVuforiaNavigationWebcam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/HardwareK9bot" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/HardwareK9bot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/HardwarePushbot" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/HardwarePushbot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/HardwarePushbotMatrix" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/HardwarePushbotMatrix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/K9botTeleopTank_Linear" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/K9botTeleopTank_Linear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByEncoder_Linear" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByEncoder_Linear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByGyro_Linear" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByGyro_Linear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByTime_Linear" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByTime_Linear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotAutoDriveToLine_Linear" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotAutoDriveToLine_Linear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotTeleopPOV_Linear" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotTeleopPOV_Linear" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotTeleopTank_Iterative" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/PushbotTeleopTank_Iterative" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SampleRevBlinkinLedDriver" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SampleRevBlinkinLedDriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorAdafruitRGB" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorAdafruitRGB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorBNO055IMU" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorBNO055IMU" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorBNO055IMUCalibration" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorBNO055IMUCalibration" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorColor" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorColor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorDIO" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorDIO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorDigitalTouch" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorDigitalTouch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorHTColor" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorHTColor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorHTGyro" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorHTGyro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorKLNavxMicro" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorKLNavxMicro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorLEGOLight" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorLEGOLight" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorLEGOTouch" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorLEGOTouch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRColor" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRColor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRCompass" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRCompass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRGyro" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRGyro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRIrSeeker" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRIrSeeker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMROpticalDistance" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMROpticalDistance" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRRangeSensor" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorMRRangeSensor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorREV2mDistance" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorREV2mDistance" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorREVColorDistance" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/java/templates/SensorREVColorDistance" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/URI.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/URI.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/jquery-3.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/less.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/less.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/npm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/js/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/manage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_accelerometer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_accelerometer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_gyroscope.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_gyroscope.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_orientation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_orientation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_sound_pool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_sound_pool.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_text_to_speech.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/android_text_to_speech.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/bno055imu_parameters.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/bno055imu_parameters.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/gamepad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/gamepad.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/images.css" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/images.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/linear_op_mode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/linear_op_mode.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/rev_blinkin_led_driver.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/rev_blinkin_led_driver.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/utilities.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/utilities.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaLocalizerParameters_addWebcamCalibrationFile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaLocalizerParameters_addWebcamCalibrationFile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaLocalizerParameters_getProperty_CameraName.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaLocalizerParameters_getProperty_CameraName.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaLocalizerParameters_setCameraName.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaLocalizerParameters_setCameraName.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaRoverRuckus_initialize_withWebcam.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaRoverRuckus_initialize_withWebcam.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaTrackableDefaultListener_setCameraLocationOnRobot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/assets/debug/toolbox/vuforiaTrackableDefaultListener_setCameraLocationOnRobot.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/BasicDrive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/MecanumBasebot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/MecanumDrive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/SamplingOrderExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/IGLyCFwGpDdx5GbmN7RmFqq0WW4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/JOL7FRmecD025swqooZCGa42DmE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/M5Isxs8imDvmrScO8mDn2LLusz4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Q2dMzU2mc5XidYqmIAwBOzaxSfQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/besN_U4U6hMKTPvIVBmi2NqUciM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fGVeSGRKRWvqqYlwpkdWuUujTnw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/mFeexKkJ9e1A+fWasgOgXAmRnW4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/nBJ0OuyNeMQa7nrMmqtc9B6Gh8k=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/qtS0oQQVOkipTFRVwN0B26CnZks=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/qxF3yYF63JMwDaKCY+2liRlwOzY=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rIatneZQXbmD2SNp581Fe5ybP5s=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ulCzMVTy_PT0g3RlnCHeQE257zM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/y5U1FIc6CHhzgi7dgxZSdlnJZOA=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/yzDQXUUT47p6gmMyEvt6t+PDjLU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/IGLyCFwGpDdx5GbmN7RmFqq0WW4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/JOL7FRmecD025swqooZCGa42DmE=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/M5Isxs8imDvmrScO8mDn2LLusz4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/Q2dMzU2mc5XidYqmIAwBOzaxSfQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/besN_U4U6hMKTPvIVBmi2NqUciM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/fGVeSGRKRWvqqYlwpkdWuUujTnw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/mFeexKkJ9e1A+fWasgOgXAmRnW4=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/nBJ0OuyNeMQa7nrMmqtc9B6Gh8k=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/qtS0oQQVOkipTFRVwN0B26CnZks=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/qxF3yYF63JMwDaKCY+2liRlwOzY=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/rIatneZQXbmD2SNp581Fe5ybP5s=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/ulCzMVTy_PT0g3RlnCHeQE257zM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/y5U1FIc6CHhzgi7dgxZSdlnJZOA=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/yzDQXUUT47p6gmMyEvt6t+PDjLU=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/y+ZqRWCS0CAAs872Y1lrqAhaGPI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/manifests/full/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/res/debug/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/res/debug/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/10.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/11.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/11.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/12.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/13.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/14.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/14.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/15.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/15.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/16.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/16.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/17.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/17.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/18.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/18.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/19.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/19.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/20.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/24.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/28.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/31.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/32.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/33.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/34.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/35.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/36.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/37.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/38.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/39.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/40.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/41.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$array.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$attr.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$color.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$dimen.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$drawable.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$id.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$layout.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$menu.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$raw.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$string.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$style.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$styleable.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R$xml.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/google/blocks/R.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/qualcomm/ftccommon/R$array.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/qualcomm/ftccommon/R$attr.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/qualcomm/ftccommon/R$color.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/qualcomm/ftccommon/R$dimen.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/qualcomm/ftccommon/R$drawable.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/qualcomm/ftccommon/R$id.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/qualcomm/ftccommon/R$layout.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/42/com/qualcomm/ftccommon/R$menu.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/7.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/8.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/9.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/CraterSide.java" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/CraterSide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/DepotSide.java" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/DepotSide.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumDrive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/TestDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/TestDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary3/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary3/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary3/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary3/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary3/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary3/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary3/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary3/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary3/openCVLibrary3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary3/openCVLibrary3.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -538,29 +122,53 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Brobotix" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MecanumDrive.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MecanumDrive.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumDrive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="182" column="22" selection-start-line="182" selection-start-column="22" selection-end-line="182" selection-end-column="22" />
+            <state relative-caret-position="-2315">
+              <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
               <folding>
-                <element signature="method#checkStatus#0;class#MecanumDrive#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3230#7179#0" />
+                <element signature="e#6443#6984#0" />
+                <element signature="e#6989#7543#0" />
+                <element signature="e#12755#13774#0" />
+                <element signature="e#14136#14623#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MecanumWorkingDrive.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MecanumTestingDrive.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumTestingDrive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2958">
+              <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="193" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MecanumWorkingDrive.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumWorkingDrive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="228" column="8" selection-start-line="228" selection-start-column="8" selection-end-line="228" selection-end-column="8" />
+            <state relative-caret-position="4131">
+              <caret line="243" column="60" selection-start-line="243" selection-start-column="60" selection-end-line="243" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -589,8 +197,8 @@
       <file leaf-file-name="TestDistance.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/TestDistance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
-              <caret line="147" column="38" selection-start-line="147" selection-start-column="38" selection-end-line="147" selection-end-column="38" />
+            <state relative-caret-position="120">
+              <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -604,6 +212,7 @@
       <find>moveMoto</find>
       <find>location</find>
       <find>liftgo</find>
+      <find>dumptime</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -5316,11 +4925,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/TestDistance.java" />
         <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/CraterSide.java" />
         <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/DepotSide.java" />
-        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumDrive.java" />
         <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumWorkingDrive.java" />
+        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Examples/Teleop/BasicDrive.java" />
+        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumTestingDrive.java" />
+        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/TestDistance.java" />
+        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumDrive.java" />
       </list>
     </option>
   </component>
@@ -5336,7 +4947,6 @@
     <panes>
       <pane id="ProjectPane" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -5366,12 +4976,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="ZY22428BTX" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.do.not.ask.upgrade.gradle.plugin" value="3.1.3" />
   </component>
@@ -5509,15 +5121,15 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Build Variants" order="2" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838285" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32838285" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32838285" />
       <window_info anchor="bottom" id="Logcat" order="7" weight="0.32838285" />
       <window_info id="Captures" order="2" weight="0.25" />
@@ -5525,19 +5137,19 @@
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18910742" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32838285" />
-      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Gradle" order="7" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -5582,10 +5194,68 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumDrive.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4386">
+          <caret line="258" column="81" selection-start-line="258" selection-start-column="81" selection-end-line="258" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3230#7179#0" />
+            <element signature="e#6443#6984#0" />
+            <element signature="e#6989#7543#0" />
+            <element signature="e#12755#13774#0" />
+            <element signature="e#14136#14623#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumTestingDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2958">
+          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="193" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumWorkingDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4131">
+          <caret line="243" column="60" selection-start-line="243" selection-start-column="60" selection-end-line="243" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/CraterSide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding>
+            <element signature="e#3446#5872#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/DepotSide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/TestDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="147" column="38" selection-start-line="147" selection-start-column="38" selection-end-line="147" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3349">
           <caret line="197" lean-forward="true" selection-start-line="197" selection-end-line="197" />
           <folding>
-            <element signature="method#checkStatus#0;class#MecanumDrive#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3230#7179#0" />
+            <element signature="e#6443#6984#0" />
+            <element signature="e#6989#7543#0" />
+            <element signature="e#12755#13774#0" />
+            <element signature="e#14136#14623#0" />
           </folding>
         </state>
       </provider>
@@ -5626,7 +5296,12 @@
         <state relative-caret-position="2380">
           <caret line="140" column="28" lean-forward="true" selection-start-line="140" selection-start-column="28" selection-end-line="140" selection-end-column="28" />
           <folding>
-            <element signature="method#checkStatus#0;class#MecanumDrive#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3230#7179#0" />
+            <element signature="e#6443#6984#0" />
+            <element signature="e#6989#7543#0" />
+            <element signature="e#12755#13774#0" />
+            <element signature="e#14136#14623#0" />
           </folding>
         </state>
       </provider>
@@ -5698,13 +5373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/TestDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="147" column="38" selection-start-line="147" selection-start-column="38" selection-end-line="147" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/DepotSide.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2516">
@@ -5722,20 +5390,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumDrive.java">
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Examples/Teleop/BasicDrive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="182" column="22" selection-start-line="182" selection-start-column="22" selection-end-line="182" selection-end-column="22" />
-          <folding>
-            <element signature="method#checkStatus#0;class#MecanumDrive#0" />
-          </folding>
+        <state relative-caret-position="422">
+          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumWorkingDrive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="228" column="8" selection-start-line="228" selection-start-column="8" selection-end-line="228" selection-end-column="8" />
+        <state relative-caret-position="4131">
+          <caret line="243" column="60" selection-start-line="243" selection-start-column="60" selection-end-line="243" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumTestingDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2958">
+          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="193" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/RobotCore-release-sources.jar!/com/qualcomm/robotcore/hardware/DcMotor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-683">
+          <caret line="208" column="11" lean-forward="true" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/TestDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Team10537/MecanumDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2315">
+          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3230#7179#0" />
+            <element signature="e#6443#6984#0" />
+            <element signature="e#6989#7543#0" />
+            <element signature="e#12755#13774#0" />
+            <element signature="e#14136#14623#0" />
+          </folding>
         </state>
       </provider>
     </entry>
